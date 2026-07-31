@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     img {
+            border: 2px dotted brown;
+            border-radius:100px;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+        /* Image Hover Effect */
+        img:hover{
+            transform: scale(1.08);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            filter: brightness(110%);
+        }
+
+        body{
+            background-color:cornsilk;
+        }
+         /* Center the button */
+        a{
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            text-decoration: none;
+        }
+
+        /* Button Styling */
+        button{
+            font-size: 22px;
+            padding: 15px 35px;
+            background-color: #d4af37;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover Effect */
+        button:hover{
+            background-color: #b8860b;
+            transform: scale(1.08);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+        }
+        .products{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+    justify-items:center;
+}
+
+.product{
+    width:250px;
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.product img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    margin:0;
+    padding:0;
+    border:2px solid brown;
+    border-radius:10px;
+}
+
+.price{
+    color:#e91e63;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.buy,
+.cart{
+    padding:10px 15px;
+    margin:5px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+}
+
+.buy{
+    background:green;
+}
+
+.cart{
+    background:orange;
+}
+
+.see-more{
+    text-align:center;
+    margin:20px 0;
+}
+
+.see-more a{
+    display:inline;
+}
+.back-btn{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.back-btn a{
+    display: inline-block;
+}
+        
+        </style>
+</head>
+<body>
+    <div class="products">
+
+    <div class="product">
+        <img src="pictures/jewellery 4.jfif" alt="jewellery 4">
+        <h3>jewellery 4</h3>
+        <p class="price">Rs. 999</p>
+        <button class="buy">Buy Now</button>
+        <button class="cart">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="pictures/jewellery 5.jfif" alt="jewellery 5">
+        <h3>jewellery 5</h3>
+        <p class="price">Rs. 700</p>
+        <button class="buy">Buy Now</button>
+        <button class="cart">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="pictures/jewellery 6.jfif" alt="jewellery 6">
+        <h3>jewellery 6</h3>
+        <p class="price">Rs. 599</p>
+        <button class="buy">Buy Now</button>
+        <button class="cart">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="pictures/jewellery 7.jfif" alt="jewellery 7">
+        <h3>jewellery 7</h3>
+        <p class="price"><Rs class="689"></Rs></p>
+        <button class="buy">Buy Now</button>
+        <button class="cart">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="pictures/jewellery 8.jfif" alt="jewellery 8">
+        <h3>jewellery 8</h3>
+        <p class="price">Rs. 599</p>
+        <button class="buy">Buy Now</button>
+        <button class="cart">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="pictures/jewellery 9.jfif" alt="jewellery 9">
+        <h3>jewellery 9</h3>
+        <p class="price">Rs. 789</p>
+        <button class="buy">Buy Now</button>
+        <button class="cart">Add to Cart</button>
+    </div>
+    <div class="Back to home">
+    <a href="http://127.0.0.1:5500/index.html">
+        <button>Back to home</button>
+    </a>
+</div>
+    
+
+</body>
+</html>
